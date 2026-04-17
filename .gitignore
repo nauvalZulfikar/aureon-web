@@ -1,1 +1,6 @@
 .vercel
+.env.agent
+.agent.yaml
+agent.py
+list_api_keys.py
+.claude/
