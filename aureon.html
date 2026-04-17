@@ -830,6 +830,18 @@ footer {
   letter-spacing: 0.5px;
 }
 
+.f-links { display: flex; gap: 18px; }
+.f-links a {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: var(--zinc-400);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+.f-links a:hover { color: var(--gold); }
+
 /* ANIMATIONS */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(18px); }
@@ -1426,6 +1438,10 @@ footer {
 
 <footer>
   <div class="f-logo" style="background:transparent;"><img src="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png" alt="Aureon" style="height:132px;width:auto;display:block;"></div>
+  <div class="f-links">
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
   <div class="f-copy">© 2025 AUREONFORGE — DATA, AI & AUTOMATION</div>
 </footer>
 

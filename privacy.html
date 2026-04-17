@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Aureon</title>
+<link rel="icon" type="image/png" href="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --zinc-950: #0D0D0F;
+  --zinc-900: #111113;
+  --zinc-800: #1C1C20;
+  --zinc-700: #3A3A42;
+  --zinc-600: #52525E;
+  --zinc-500: #888896;
+  --zinc-400: #ABABBA;
+  --zinc-300: #C8C8D4;
+  --zinc-200: #E0E0E8;
+  --zinc-100: #F2F2F6;
+  --gold: #F5C542;
+  --gold-bright: #FFD966;
+  --gold-dim: rgba(245,197,66,0.12);
+  --gold-border: rgba(245,197,66,0.25);
+  --gold-deep: #1A1500;
+  --white: #FFFFFF;
+  --radius: 8px;
+  --radius-lg: 14px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--zinc-950);
+  color: var(--zinc-100);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(13,13,15,0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--zinc-800);
+  padding: 0 5%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo { display: flex; align-items: center; height: 160px; }
+.nav-logo img { height: 144px; width: auto; display: block; }
+
+.nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 13px;
+  color: var(--zinc-200);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--zinc-100); }
+
+.nav-cta {
+  background: var(--gold) !important;
+  color: var(--gold-deep) !important;
+  padding: 7px 18px !important;
+  border-radius: var(--radius) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  transition: background 0.15s !important;
+}
+.nav-cta:hover { background: var(--gold-bright) !important; }
+
+main.legal {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 220px 5% 100px;
+}
+
+.legal .eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.legal h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.legal .meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: var(--zinc-500);
+  letter-spacing: 0.5px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--zinc-800);
+  margin-bottom: 48px;
+}
+
+.legal h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--zinc-100);
+  margin-top: 44px;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.legal h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--zinc-200);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.legal p, .legal li {
+  font-size: 15px;
+  color: var(--zinc-300);
+  margin-bottom: 14px;
+}
+
+.legal ul, .legal ol { padding-left: 22px; margin-bottom: 18px; }
+.legal li { margin-bottom: 8px; }
+
+.legal a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-border);
+  transition: border-color 0.15s;
+}
+.legal a:hover { border-color: var(--gold); }
+
+.legal strong { color: var(--zinc-100); font-weight: 600; }
+
+.legal .callout {
+  background: var(--zinc-900);
+  border: 1px solid var(--zinc-800);
+  border-left: 2px solid var(--gold);
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  margin: 28px 0;
+  font-size: 14px;
+  color: var(--zinc-300);
+}
+
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 26px;
+  font-size: 14px;
+}
+.legal th, .legal td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--zinc-800);
+  vertical-align: top;
+}
+.legal th {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--zinc-400);
+  font-weight: 400;
+}
+.legal td { color: var(--zinc-300); }
+
+footer {
+  background: var(--zinc-950);
+  border-top: 1px solid var(--zinc-800);
+  padding: 24px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.f-logo { display: flex; align-items: center; }
+.f-logo img { height: 132px; width: auto; display: block; }
+.f-copy {
+  font-family: 'Space Mono', monospace; font-weight: 700;
+  font-size: 10px;
+  color: var(--zinc-200);
+  letter-spacing: 0.5px;
+}
+.f-links { display: flex; gap: 18px; }
+.f-links a {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: var(--zinc-400);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+.f-links a:hover { color: var(--gold); }
+
+@media (max-width: 800px) {
+  .nav-links { display: none; }
+  main.legal { padding-top: 190px; }
+  .legal table, .legal thead, .legal tbody, .legal tr, .legal th, .legal td { display: block; }
+  .legal th { border: none; padding-bottom: 4px; }
+  .legal td { padding-top: 4px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo" style="background:transparent;"><img src="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png" alt="Aureon"></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#approach">Approach</a></li>
+    <li><a href="index.html#sectors">Sectors</a></li>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#team">Team</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="legal">
+  <div class="eyebrow">/ LEGAL</div>
+  <h1>Privacy Policy</h1>
+  <div class="meta">LAST UPDATED — 18 APRIL 2026</div>
+
+  <p>This Privacy Policy explains how Aureon ("<strong>Aureon</strong>", "<strong>we</strong>", "<strong>us</strong>") collects, uses, shares, and protects personal data when you visit our website, contact us, or engage our services. We handle personal data in accordance with Indonesia's Personal Data Protection Law (<strong>UU No. 27/2022 — UU PDP</strong>) and, where applicable, the EU General Data Protection Regulation (<strong>GDPR</strong>).</p>
+
+  <h2>1. Data Controller</h2>
+  <div class="callout">
+    <strong>Aureon</strong> — Bandung, Indonesia<br>
+    Contact: <a href="mailto:zulfikar.nauval1998@gmail.com">zulfikar.nauval1998@gmail.com</a>
+  </div>
+
+  <h2>2. Information We Collect</h2>
+  <table>
+    <thead>
+      <tr><th>Category</th><th>Examples</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Contact data</strong></td><td>Name, email, phone, company, job title</td><td>You (contact form, email, meetings)</td></tr>
+      <tr><td><strong>Engagement data</strong></td><td>Project briefs, contracts, correspondence</td><td>You</td></tr>
+      <tr><td><strong>Technical data</strong></td><td>IP address, browser, device, referring URL</td><td>Automatic (website)</td></tr>
+      <tr><td><strong>Usage data</strong></td><td>Pages viewed, time on site, interactions</td><td>Analytics tools</td></tr>
+      <tr><td><strong>Client data</strong></td><td>Datasets and systems shared for project work</td><td>You (as data controller)</td></tr>
+    </tbody>
+  </table>
+  <p>We do not intentionally collect sensitive data (e.g. health, biometric, political views). If your project requires processing such data, this will be governed by a separate Data Processing Agreement.</p>
+
+  <h2>3. How We Use Your Information</h2>
+  <ul>
+    <li><strong>Deliver services</strong> — respond to inquiries, prepare proposals, perform engagements, and deliver results.</li>
+    <li><strong>Communicate</strong> — send project updates, invoices, and occasional service announcements.</li>
+    <li><strong>Improve the website</strong> — analyse usage patterns to fix bugs and enhance content.</li>
+    <li><strong>Comply with law</strong> — meet tax, accounting, and regulatory obligations.</li>
+    <li><strong>Protect our rights</strong> — detect, prevent, or investigate fraud, abuse, or security incidents.</li>
+  </ul>
+
+  <h2>4. Legal Bases</h2>
+  <p>Where GDPR applies, we rely on the following legal bases:</p>
+  <ul>
+    <li><strong>Contract</strong> — processing necessary to perform an engagement or take steps at your request before entering one.</li>
+    <li><strong>Consent</strong> — where you have explicitly opted in (e.g. marketing emails). You may withdraw consent at any time.</li>
+    <li><strong>Legitimate interests</strong> — running our business, securing our systems, and improving our services, balanced against your rights.</li>
+    <li><strong>Legal obligation</strong> — tax, accounting, and regulatory requirements.</li>
+  </ul>
+
+  <h2>5. Cookies and Analytics</h2>
+  <p>Our website may use essential cookies to function and, where enabled, privacy-respecting analytics cookies to understand aggregated traffic. You can disable cookies in your browser settings; some features may then not work as intended.</p>
+
+  <h2>6. Sharing Your Information</h2>
+  <p>We do not sell personal data. We may share data with:</p>
+  <ul>
+    <li><strong>Service providers</strong> — cloud hosting, email, payment, and analytics providers acting under contractual obligations;</li>
+    <li><strong>Professional advisors</strong> — lawyers, accountants, and auditors where legally required;</li>
+    <li><strong>Authorities</strong> — when required by law, court order, or to protect rights, property, or safety;</li>
+    <li><strong>Successors</strong> — in connection with a merger, acquisition, or sale of assets, subject to equivalent protections.</li>
+  </ul>
+
+  <h2>7. International Transfers</h2>
+  <p>Some of our service providers are located outside Indonesia or the EEA. Where data is transferred internationally, we use appropriate safeguards such as Standard Contractual Clauses or equivalent mechanisms permitted under UU PDP and GDPR.</p>
+
+  <h2>8. Data Retention</h2>
+  <p>We retain personal data only for as long as necessary to fulfil the purposes for which it was collected, or to comply with legal, tax, accounting, or contractual requirements. General retention guidelines:</p>
+  <ul>
+    <li><strong>Inquiries that do not lead to engagement</strong> — up to 24 months;</li>
+    <li><strong>Active clients</strong> — for the duration of the engagement plus <strong>5 years</strong>;</li>
+    <li><strong>Accounting records</strong> — up to <strong>10 years</strong> as required by Indonesian law.</li>
+  </ul>
+
+  <h2>9. Data Security</h2>
+  <p>We apply technical and organisational measures appropriate to the risk, including access controls, encryption in transit (TLS), least-privilege principles, and vendor due diligence. No method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+  <h2>10. Your Rights</h2>
+  <p>Subject to applicable law, you have the right to:</p>
+  <ul>
+    <li>Access the personal data we hold about you;</li>
+    <li>Request correction of inaccurate or incomplete data;</li>
+    <li>Request deletion where retention is no longer justified;</li>
+    <li>Restrict or object to certain processing;</li>
+    <li>Request data portability in a commonly used machine-readable format;</li>
+    <li>Withdraw consent at any time, without affecting prior lawful processing;</li>
+    <li>Lodge a complaint with the relevant data protection authority.</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <a href="mailto:zulfikar.nauval1998@gmail.com">zulfikar.nauval1998@gmail.com</a>. We will respond within the timeframes required by law (typically 30 days).</p>
+
+  <h2>11. Children's Privacy</h2>
+  <p>Our services are intended for organisational clients and individuals aged 18 and over. We do not knowingly collect personal data from children.</p>
+
+  <h2>12. AI Processing</h2>
+  <p>When we process your data using AI or machine-learning systems as part of an engagement, we do so under the instructions defined in your SOW or Data Processing Agreement. We do not use client data to train third-party public models unless you have given explicit written consent.</p>
+
+  <h2>13. Changes to This Policy</h2>
+  <p>We may update this Policy to reflect operational, legal, or regulatory changes. The "Last Updated" date above shows when the latest version took effect. Material changes will be communicated through the website or email.</p>
+
+  <h2>14. Contact</h2>
+  <div class="callout">
+    For any privacy-related inquiry, request, or complaint:<br><br>
+    <strong>Aureon — Privacy</strong><br>
+    Bandung, Indonesia<br>
+    <a href="mailto:zulfikar.nauval1998@gmail.com">zulfikar.nauval1998@gmail.com</a>
+  </div>
+</main>
+
+<footer>
+  <div class="f-logo" style="background:transparent;"><img src="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png" alt="Aureon"></div>
+  <div class="f-links">
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <div class="f-copy">© 2025 AUREONFORGE — DATA, AI & AUTOMATION</div>
+</footer>
+
+</body>
+</html>

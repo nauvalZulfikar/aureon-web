@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Aureon</title>
+<link rel="icon" type="image/png" href="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --zinc-950: #0D0D0F;
+  --zinc-900: #111113;
+  --zinc-800: #1C1C20;
+  --zinc-700: #3A3A42;
+  --zinc-600: #52525E;
+  --zinc-500: #888896;
+  --zinc-400: #ABABBA;
+  --zinc-300: #C8C8D4;
+  --zinc-200: #E0E0E8;
+  --zinc-100: #F2F2F6;
+  --gold: #F5C542;
+  --gold-bright: #FFD966;
+  --gold-dim: rgba(245,197,66,0.12);
+  --gold-border: rgba(245,197,66,0.25);
+  --gold-deep: #1A1500;
+  --white: #FFFFFF;
+  --radius: 8px;
+  --radius-lg: 14px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--zinc-950);
+  color: var(--zinc-100);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(13,13,15,0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--zinc-800);
+  padding: 0 5%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo { display: flex; align-items: center; height: 160px; }
+.nav-logo img { height: 144px; width: auto; display: block; }
+
+.nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 13px;
+  color: var(--zinc-200);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--zinc-100); }
+
+.nav-cta {
+  background: var(--gold) !important;
+  color: var(--gold-deep) !important;
+  padding: 7px 18px !important;
+  border-radius: var(--radius) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  transition: background 0.15s !important;
+}
+.nav-cta:hover { background: var(--gold-bright) !important; }
+
+main.legal {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 220px 5% 100px;
+}
+
+.legal .eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.legal h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.legal .meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: var(--zinc-500);
+  letter-spacing: 0.5px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--zinc-800);
+  margin-bottom: 48px;
+}
+
+.legal h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--zinc-100);
+  margin-top: 44px;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.legal h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--zinc-200);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.legal p, .legal li {
+  font-size: 15px;
+  color: var(--zinc-300);
+  margin-bottom: 14px;
+}
+
+.legal ul, .legal ol { padding-left: 22px; margin-bottom: 18px; }
+.legal li { margin-bottom: 8px; }
+
+.legal a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-border);
+  transition: border-color 0.15s;
+}
+.legal a:hover { border-color: var(--gold); }
+
+.legal strong { color: var(--zinc-100); font-weight: 600; }
+
+.legal .callout {
+  background: var(--zinc-900);
+  border: 1px solid var(--zinc-800);
+  border-left: 2px solid var(--gold);
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  margin: 28px 0;
+  font-size: 14px;
+  color: var(--zinc-300);
+}
+
+footer {
+  background: var(--zinc-950);
+  border-top: 1px solid var(--zinc-800);
+  padding: 24px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.f-logo { display: flex; align-items: center; }
+.f-logo img { height: 132px; width: auto; display: block; }
+.f-copy {
+  font-family: 'Space Mono', monospace; font-weight: 700;
+  font-size: 10px;
+  color: var(--zinc-200);
+  letter-spacing: 0.5px;
+}
+.f-links { display: flex; gap: 18px; }
+.f-links a {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: var(--zinc-400);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+.f-links a:hover { color: var(--gold); }
+
+@media (max-width: 800px) {
+  .nav-links { display: none; }
+  main.legal { padding-top: 190px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo" style="background:transparent;"><img src="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png" alt="Aureon"></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#approach">Approach</a></li>
+    <li><a href="index.html#sectors">Sectors</a></li>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#team">Team</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="legal">
+  <div class="eyebrow">/ LEGAL</div>
+  <h1>Terms of Service</h1>
+  <div class="meta">LAST UPDATED — 18 APRIL 2026</div>
+
+  <p>Welcome to Aureon ("<strong>Aureon</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>"). These Terms of Service ("<strong>Terms</strong>") govern your access to and use of the Aureon website, services, and any related deliverables (collectively, the "<strong>Services</strong>"). By using the Services or engaging Aureon for any project, you agree to be bound by these Terms.</p>
+
+  <h2>1. Services</h2>
+  <p>Aureon provides consulting and implementation services in the areas of data engineering, artificial intelligence, machine learning, and business process automation. The specific scope, deliverables, timeline, and fees for each engagement will be set out in a separate written Statement of Work ("<strong>SOW</strong>") or proposal signed by both parties.</p>
+  <p>In the event of any conflict between these Terms and an SOW, the SOW shall prevail for that specific engagement.</p>
+
+  <h2>2. Eligibility</h2>
+  <p>You must be at least 18 years old and have legal authority to enter into a binding contract on behalf of yourself or the organisation you represent. By accessing the Services, you represent and warrant that you meet these requirements.</p>
+
+  <h2>3. Client Responsibilities</h2>
+  <p>To deliver quality results, we rely on your timely cooperation. You agree to:</p>
+  <ul>
+    <li>Provide accurate, complete, and lawful information, data, and access required for the engagement;</li>
+    <li>Designate a point of contact with authority to make decisions;</li>
+    <li>Review deliverables and provide feedback within agreed timelines;</li>
+    <li>Obtain all necessary consents, licenses, and regulatory approvals for data you share with us.</li>
+  </ul>
+
+  <h2>4. Fees and Payment</h2>
+  <p>Fees are specified in the applicable SOW. Unless otherwise stated, invoices are due within <strong>14 days</strong> of issue. Late payments may incur interest at 1.5% per month or the maximum rate permitted by law, whichever is lower. All fees are exclusive of applicable taxes (VAT, PPN, or equivalent).</p>
+
+  <h2>5. Intellectual Property</h2>
+  <h3>5.1 Client Materials</h3>
+  <p>You retain all rights in the data, documents, and materials you provide to us ("<strong>Client Materials</strong>"). You grant Aureon a limited, non-exclusive license to use Client Materials solely for the purpose of performing the Services.</p>
+  <h3>5.2 Deliverables</h3>
+  <p>Upon full payment, Aureon assigns to you all rights in the final custom deliverables produced specifically for your engagement, excluding any pre-existing tools, frameworks, libraries, or know-how ("<strong>Aureon Tools</strong>") that we may embed or use. Aureon Tools remain the property of Aureon, and you receive a perpetual, non-exclusive, non-transferable license to use them as part of the deliverables.</p>
+  <h3>5.3 Open-Source Components</h3>
+  <p>Deliverables may incorporate third-party open-source components governed by their own licenses. You agree to comply with those licenses.</p>
+
+  <h2>6. Confidentiality</h2>
+  <p>Each party agrees to protect the other's confidential information with the same degree of care it uses for its own confidential information, and no less than a reasonable standard of care. Confidentiality obligations survive termination for a period of <strong>three (3) years</strong>, except for trade secrets, which remain confidential for as long as they qualify as such under applicable law.</p>
+
+  <h2>7. Data Protection</h2>
+  <p>Aureon processes personal data in accordance with our <a href="privacy.html">Privacy Policy</a> and applicable data protection laws (including UU PDP of Indonesia and, where applicable, the GDPR). Where we act as a data processor on your behalf, the parties shall enter into a separate Data Processing Agreement.</p>
+
+  <h2>8. AI and Automated Systems</h2>
+  <p>You acknowledge that AI and machine learning systems produce probabilistic outputs and may be imperfect. Aureon does not warrant that AI-generated results will be free from errors, bias, or hallucinations. You are responsible for reviewing, validating, and using such outputs with appropriate human oversight before relying on them for material decisions.</p>
+
+  <h2>9. Warranties and Disclaimers</h2>
+  <p>Aureon warrants that the Services will be performed in a professional and workmanlike manner consistent with industry standards. <strong>Except as expressly stated, the Services and deliverables are provided "as is" without warranties of any kind, whether express, implied, or statutory, including merchantability, fitness for a particular purpose, and non-infringement.</strong></p>
+
+  <h2>10. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, Aureon's total aggregate liability arising out of or relating to these Terms or any engagement shall not exceed the total fees paid by you to Aureon in the <strong>twelve (12) months</strong> preceding the event giving rise to the claim. In no event shall either party be liable for indirect, incidental, special, consequential, or punitive damages, including lost profits, revenue, or data.</p>
+
+  <h2>11. Indemnification</h2>
+  <p>You agree to indemnify and hold Aureon harmless from any third-party claims arising out of (a) your Client Materials, (b) your use of deliverables in violation of law or these Terms, or (c) your breach of any representation or obligation herein.</p>
+
+  <h2>12. Termination</h2>
+  <p>Either party may terminate an engagement for material breach that remains uncured after <strong>15 days</strong> written notice. Upon termination, you agree to pay for all Services rendered and expenses incurred up to the effective date of termination. Sections that by their nature should survive termination (including IP, confidentiality, and liability) shall survive.</p>
+
+  <h2>13. Governing Law and Disputes</h2>
+  <p>These Terms are governed by the laws of the <strong>Republic of Indonesia</strong>, without regard to conflict-of-laws principles. Any dispute shall first be attempted to be resolved amicably within 30 days. Unresolved disputes shall be submitted to the courts of Bandung, Indonesia, unless the parties agree to arbitration.</p>
+
+  <h2>14. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. Material changes will be communicated via the website or email. Continued use of the Services after the effective date of an update constitutes acceptance of the revised Terms.</p>
+
+  <h2>15. Contact</h2>
+  <div class="callout">
+    <strong>Aureon</strong><br>
+    Bandung, Indonesia<br>
+    Email: <a href="mailto:zulfikar.nauval1998@gmail.com">zulfikar.nauval1998@gmail.com</a>
+  </div>
+</main>
+
+<footer>
+  <div class="f-logo" style="background:transparent;"><img src="ChatGPT_Image_16_Mar_2026__02.24.38-removebg-preview.png" alt="Aureon"></div>
+  <div class="f-links">
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <div class="f-copy">© 2025 AUREONFORGE — DATA, AI & AUTOMATION</div>
+</footer>
+
+</body>
+</html>
